@@ -2,9 +2,9 @@ import airbnbLogo from "../assets/images/airbnb-logo.svg";
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <nav>
       <img src={airbnbLogo} alt="Airbnb Logo" />
-    </div>
+    </nav>
   );
 }
 
