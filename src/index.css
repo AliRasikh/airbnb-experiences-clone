@@ -60,6 +60,7 @@ section{
   width: 175px;
   border-radius: 5px;
   margin-right: 60px;
+  position: relative;
 }
 
 .card--image{
@@ -70,17 +71,15 @@ section{
   z-index: 0;
 }
 
-.card--image-container{
-  position: relative;
-}
 
-#card--image-status{
+
+#card--badge{
   background-color: white;
   width: 20%;
   border-radius: 4px;
   text-align: center;
   position: absolute;
-  top:0;
+  top: 10px;
   left: 10px;
   z-index: 1;
   min-width: 100px;

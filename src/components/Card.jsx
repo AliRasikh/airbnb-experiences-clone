@@ -4,17 +4,20 @@ import star from "../assets/images/star.png";
 
 function Card(props) {
   let available;
-  props.openSpots > 0 ? (available = true) : (available = false);
+  props.openSpots === 0 ? (available = false) : (available = true);
+
+  let badgeText;
+  if (!available) badgeText = "Sold out";
+  else if (props.location === "Online") badgeText = "Online";
+
   return (
     <div className="card">
-      <div className="card--image-container">
-        <img
-          src={`/src/assets/images/${props.image}`}
-          alt={props.alt}
-          className="card--image"
-        />
-        {!available && <p id="card--image-status">Sold out</p>}
-      </div>
+      <img
+        src={`/src/assets/images/${props.image}`}
+        alt={props.alt}
+        className="card--image"
+      />
+      {badgeText && <p id="card--badge">{badgeText}</p>}
       <p>
         <img id="card--star" src={star} alt="star iamge" />
         {props.stars}{" "}
