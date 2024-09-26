@@ -1,6 +1,6 @@
 // import saraImg from "../assets/images/katie-zaferes.png";
 import PropTypes from "prop-types";
-import star from "../assets/images/star.png";
+import starImg from "../assets/images/star.png";
 
 function Card(props) {
   let available;
@@ -19,10 +19,10 @@ function Card(props) {
       />
       {badgeText && <p id="card--badge">{badgeText}</p>}
       <p>
-        <img id="card--star" src={star} alt="star iamge" />
-        {props.stars}{" "}
+        <img id="card--star" src={starImg} alt="star iamge" />
+        {props.stats.stars.toFixed(1)}{" "}
         <span className="gray">
-          ({props.reviewCount}) &#8226; {props.location}
+          ({props.stats.reviewCount}) &#8226; {props.location}
         </span>
       </p>
       <h2>{props.title}</h2>
@@ -42,9 +42,11 @@ function Card(props) {
 }
 
 Card.propTypes = {
+  stats: PropTypes.shape({
+    stars: PropTypes.number.isRequired,
+    reviewCount: PropTypes.number.isRequired,
+  }),
   image: PropTypes.string.isRequired,
-  stars: PropTypes.string.isRequired,
-  reviewCount: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
