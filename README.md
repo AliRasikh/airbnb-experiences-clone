@@ -8,6 +8,9 @@ Concepts used:
 - [x] array .map()
 - [x] Conditional Rendering
 - [x] Styling with Classes
+
+## Demo
+![demo](demo.gif "Demo")
 <br>
 
 ## 🛠️ Stack &#38; tools used
