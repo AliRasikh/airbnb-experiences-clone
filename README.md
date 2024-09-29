@@ -10,8 +10,7 @@ Concepts used:
 - [x] Styling with Classes
 
 ## Demo
-![demo](demo.gif "Demo")
-<br>
+<img src="demo.gif" alt="demo" width="500" height="420">
 
 ## 🛠️ Stack &#38; tools used
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="vite logo" width="50" height="50" style="max-width:100%;"/>&nbsp;
@@ -44,5 +43,3 @@ Concepts used:
   Happy coding
   <br>(❁´◡`❁)
 </div>
-
-<img src="src/images/project-thumbnail.png" width="70%"/>
