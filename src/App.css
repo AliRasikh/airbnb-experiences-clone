@@ -1,4 +1,17 @@
 .cards {
     display: flex;
+    overflow-x: scroll;
     padding: 20px;
+}
+
+footer {
+    color: rgb(171, 37, 37);
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    font-weight: 500;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);   
 }
